@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Contract</title>
+    <style>
+        :root {
+            --primary-pink: #d81b60;       
+            --secondary-pink: #f8bbd0;    
+            --bg-color: #fce4ec;           
+            --text-color: #37474f;        
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(216, 27, 96, 0.15);
+        }
+
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+     
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            flex: 1; 
+        }
+
+      
+        header {
+            background: linear-gradient(135deg, var(--secondary-pink), var(--primary-pink));
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--secondary-pink);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-pink);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-left: 5px solid var(--primary-pink);
+            padding-left: 10px;
+        }
+
+      
+        ul {
+            list-style-type: none; 
+            padding-left: 10px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            color: #455a64;
+        }
+
+ 
+        li::before {
+            content: "♥";
+            color: var(--primary-pink);
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+   
+        .signature-block {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff0f6; 
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--secondary-pink);
+        }
+
+        .signer-line {
+            margin-top: 10px;
+            border-top: 2px solid var(--primary-pink);
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.5;
+        }
+
+       
+        .signature-img {
+            width: 180px;             
+            display: block;
+            margin: 0 auto;            
+            mix-blend-mode: multiply;  
+            transform: rotate(-2deg);  
+        }
+
+      
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: var(--primary-pink);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+       
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                width: auto;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Learning Contract</h1>
+            <p>CIT18 | CITCS 3F Group B | MASTERY IN WEB TECHNOLOGY</p>
+        </header>
+
+        <main>
+            <section id="expectations">
+                <h2>Expectations</h2>
+                <ul>
+                    <li>To actually understand  the concepts without becoming overly perplexed by technical words.</li>
+                    <li>To enjoy the classroom setting and feel free to ask questions when I'm having trouble.</li>
+                    <li>To acquire real-world skills rather than just theoretical ones that I can apply to future initiatives.</li>
+                    <li>To get clear instructions on what we need to do so I don't fall behind.</li>
+                    <li>To finish this semester with a good grade of at least 85 and above.</li>
+                </ul>
+            </section>
+
+            <section id="motivations">
+                <h2>Motivations</h2>
+                <ul>
+                    <li>To make my parents (and myself) proud by passing this subject.</li>
+                    <li>To prove that I can handle coding even when it gets difficult.</li>
+                    <li>To graduate on time and get a degree, which is my main goal right now.</li>
+                    <li>To build a skill set that will help me land a decent job after college.</li>
+                    <li>To satisfy my curiosity about how websites are built and designed.</li>              </ul>
+            </section>
+
+            <section id="contributions">
+                <h2>Contributions</h2>
+                <ul>
+                    <li>Will do and pass all the requirements on time.</li>
+                    <li>Will participate in class and give 100% of my attention during class.</li>
+                    <li>Will attend all classes and arrive to my class on time.</li>
+                    <li>Prioritizing my schoolwork before leisure time.</li>
+                    <li>To take breaks to help me stay mentally and physically healthy during class.</li>                </ul>
+            </section>
+
+            <section id="hindrances">
+                <h2>Hindrances</h2>
+                <ul>
+                    <li>Balancing school and personal life.</li>
+                    <li>I get sick often; it may cause some unwanted absences.</li>
+                    <li>The course might be challenging at first.</li>
+                    <li>Heavy workloads with this course and other courses.</li>
+                    <li>Lack of real-world experience.</li>
+                </ul>
+            </section>
+
+            <div class="signature-block">
+                <p>Signed and agreed to by:</p>
+                
+                <img src="signature.png" alt="My Signature" class="signature-img">
+                
+                <div class="signer-line"></div>
+                <p>Shawn Miranda</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        &copy; SHAWN MIRANDA CIT18-3F
+    </footer>
+
+</body>
+</html>
